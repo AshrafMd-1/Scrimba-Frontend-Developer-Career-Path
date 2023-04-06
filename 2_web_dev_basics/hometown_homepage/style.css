@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Patrick+Hand&family=Permanent+Marker&family=Righteous&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.intro {
+
+    background-image: url("./images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.intro h1 {
+
+    color: #f6f5f5;
+    padding: 10px;
+    font-size: 50px;
+    background-color: #AB87FF;
+    border-radius: 20px;
+    margin: 0;
+    font-family: 'Delicious Handrawn', cursive;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px #000000;
+    animation: pop ease-in-out 1s both;
+}
+
+.intro p {
+    margin: 10px 40px;
+    color: #000cff;
+    padding: 8px;
+    background-color: #C1FF9B;
+    font-size: 28px;
+    border-radius: 10px;
+    font-family: 'Patrick Hand', cursive;
+    font-weight: 700;
+    text-align: center;
+    animation: pop ease-in-out 1s both;
+}
+
+.specialties {
+    background-color: #F5FFC6;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.specialties p {
+    font-family: 'Righteous', cursive;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    padding: 10px;
+    color: rgba(255, 0, 0);
+}
+
+
+.items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+    height: 400px;
+    background-color: #f3ffe0;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+.item:hover {
+    background: linear-gradient(45deg, #f3ffe0, #d1ffff, #f3ffe0);
+    box-shadow: rgba(0, 0, 0, 0.3) 0 19px 38px, rgba(0, 0, 0, 0.22) 0 15px 12px;
+
+}
+
+
+.item p {
+    font-size: 15px;
+    color: darkred;
+    margin: 0;
+}
+
+.item img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+
+h3 {
+    font-size: 30px;
+    font-family: 'Patrick Hand', cursive;
+    color: rgba(121, 78, 206, 0.8);
+    font-weight: 700;
+    margin: 0;
+}
+
+@keyframes pop {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+
+}
+
+.guide {
+    height: 250px;
+    width: 500px;
+    background: #03001e; /* fallback for old browsers */
+    background: -webkit-linear-gradient(154deg, #fdeff9, #ec38bc, #7303c0, #03001e); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(154deg, #fdeff9, #ec38bc, #7303c0, #03001e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 10px;
+    margin-top: 1.5em;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5em;
+    border-bottom: 6px solid #F61067;
+}
+
+.guide img {
+    width: 180px;
+    border-radius: 30%;
+    margin: 10px;
+}
+
+.detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+}
+
+.detail h1 {
+    font-size: 30px;
+    font-family: 'Righteous', cursive;
+    color: #C1FF9B;
+    margin: 5px;
+    font-weight: 700;
+}
+
+.detail p {
+    font-size: 20px;
+    font-family: 'Patrick Hand', cursive;
+    color: #f6f5f5;
+    font-weight: 700;
+    margin: 5px;
+}
+
+.detail h2 {
+    font-size: 26px;
+    font-family: 'Permanent Marker', cursive;
+    color: #F5FFC6;
+    font-weight: 200;
+    margin: 5px;
+}
+
+
